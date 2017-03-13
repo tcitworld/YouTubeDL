@@ -1,0 +1,31 @@
+{
+    "name": "tcit/youtubedl",
+    "description": "Download videos from YouTube",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "psr/log": "^1.0",
+        "monolog/monolog": "^1.22",
+        "phpunit/phpunit": "^6.0"
+    },
+    "require-dev": {
+      "satooshi/php-coveralls": "~0.6"
+    },
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Thomas Citharel",
+            "email": "tcit@tcit.fr"
+        }
+    ],
+    "autoload": {
+      "psr-4": { "YouTubeDL\\": "src/" },
+      "psr-0":{
+        "": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": { "Tests\\": "tests/" }
+    }
+}
